@@ -218,3 +218,31 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Dataset
+dataset/
+data/raw/
+*.zip
+
+# Models / checkpoints
+*.pth
+*.pt
+*.onnx
+
+# Kaggle / notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
