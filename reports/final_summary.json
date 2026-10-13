@@ -1,0 +1,30 @@
+{
+  "project": "TrashBin Fill Monitor",
+  "progress": "5%",
+  "model": "MobileNetV3-Small",
+  "classes": [
+    "empty",
+    "half-full",
+    "full"
+  ],
+  "train_domain": "simulated",
+  "external_test_domain": "real",
+  "simulated_validation": {
+    "accuracy": 0.8354838709677419,
+    "precision_macro": 0.8315704963145482,
+    "recall_macro": 0.8301465801465802,
+    "f1_macro": 0.8308429515976686
+  },
+  "real_external_test": {
+    "accuracy": 0.7702702702702703,
+    "precision_macro": 0.7804232804232805,
+    "recall_macro": 0.7586390217969164,
+    "f1_macro": 0.7632850241545893
+  },
+  "limitations": [
+    "Most training images are simulated.",
+    "Real external test is small.",
+    "Model confidence is not physical fill percentage.",
+    "Output is intended for collection-priority support."
+  ]
+}
